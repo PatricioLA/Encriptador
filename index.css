@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+.container{
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: #E5E5E5;
+  }
+
+.logoAlura{
+    position: absolute;
+    height: 5%;
+    top: 5%;
+    left: 5%;
+}
+
+.simboloIndicacion{
+    position: absolute;
+    width: 50%;
+    height: 48%;
+    top: 19%;
+    left: 10.7%;
+}
+
+.indicacion{
+    font-size: 15px;
+    position: absolute;
+    width: 50%;
+    height: 48%;
+    top: 19.2%;
+    left: 13.4%;
+
+    color: #495057;
+    opacity: 0.8;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.input-entrada{
+    display: flex;
+    position: absolute;
+    width: 55%;
+    height: 50%;
+    top: 22%;
+    left: 10.7%;
+
+    font-size: 20px;
+    color: #0A3871;
+    background-color: #E5E5E5;
+    border: 1px solid #E5E5E5;
+}
+
+.enviar-encriptar{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: absolute;
+    width: 25%;
+    height: 09%;
+    top: 77%;
+    left: 10.7%;
+    padding: 24px;
+    gap: 8px;
+
+    color: white;
+    background: #0A3871;
+    border: 1px solid #D8DFE8;
+    border-radius: 24px;
+
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.enviar-desencriptar{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: absolute;
+    width: 25%;
+    height: 09%;
+    top: 77%;
+    left: 37%;
+    padding: 24px;
+    gap: 8px;
+
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #0A3871;
+    justify-content: center;
+}
+
+.encriptado {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 25%;
+    height: 90%;
+    top: 6%;
+    left: 67%;
+    background: #fff;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 15px;
+}
+
+.encriptado img{
+    display:flex;
+    position: absolute;
+    width: 280px;
+    height: 400px;
+    top: 40px;  
+}
+
+.mensaje{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1%;
+    gap: 16px;
+
+    position: absolute;
+    width: 100%;
+    top: 65%;
+
+    color: #495057;
+    text-align: center;
+}
+
+/*Responsive desing*/
+@media (max-width:57.5em){
+    .container {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .logoAlura{
+        width: 2%;
+        height: 2%;
+        top: 2%;
+        left: 2%;
+    }
+
+    .simboloIndicacion{
+        width: 50%;
+        height: 48%;
+        top: 10%;
+        left: 21%;
+    }
+
+    .indicacion{
+        width: 50%;
+        height: 48%;
+        top: 10%;
+        left: 28%; 
+        font-size: 12px;
+    }
+    .input-entrada{
+        width: 100%;
+        top: 16%;
+        left: 0%;
+    }
+    
+    .enviar-encriptar{      
+        width: 30%;
+        top: 69%;
+        left: 20%;
+        border-radius: 16px;
+        font-size: 12px;
+    }
+
+    .enviar-desencriptar{
+        width: 30%;
+        top: 69%;
+        left: 55%;
+        border-radius: 16px;
+        font-size: 12px;
+    }
+
+    .encriptado {
+      width: 80%;
+      height: 15%;
+      left: 10%;
+      top: 80%;
+    }
+    .mensaje{
+      width: 100%;
+      top: 30%;
+    }
+    .encriptado img {
+      top: 0;
+      display: none;
+      visibility: hidden;
+    }
+  }
